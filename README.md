@@ -10,5 +10,5 @@ cterm: 17 hex: 0x5f diff: 57.41080037762929
 ```
 
 ## Credits
-	- [vim.fandom.com](https://vim.fandom.com/wiki/Xterm256_color_names_for_console_Vim)
+- [vim.fandom.com](https://vim.fandom.com/wiki/Xterm256_color_names_for_console_Vim)
 
