@@ -5,8 +5,8 @@ Matches colors to the closest ones from the vim's 256-color table and returns ct
 ## Example
 
 ```console
-./match.py 6f
-cterm: 17 hex: 0x5f diff: 57.41080037762929
+./match.py 00006f
+cterm: 17 hex: 0x00005f diff: 57.41080037762929
 ```
 
 ## Credits

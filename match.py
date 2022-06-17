@@ -252,9 +252,15 @@ colors = [
 def sqr(num):
 	return num * num
 
+def hexlify(col): 
+	col = col.replace("0x", "", 1)
+	for i in range(6 - len(col)):
+		col = "0" + col
+	return "0x" + col
+
 def main():
-	if len(argv) != 2:
-		print("Usage: " + argv[0] + " 0x<hex colorcode>")
+	if len(argv) != 2 or len(argv[1]) != 6:
+		print("Usage: " + argv[0] + " <hex colorcode>")
 		quit()
 
 	wanted = int(argv[1], 16)
@@ -273,7 +279,7 @@ def main():
 
 	print(
 		"cterm: " + str(colors[res][0]) +
-		" hex: " + hex(colors[res][1]) +
+		" hex: " + hexlify(hex(colors[res][1])) +
 		" diff: " + str(best)
 	)
 
